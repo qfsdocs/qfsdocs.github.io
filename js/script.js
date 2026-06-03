@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if(dlModal) dlModal.onclick = (e) => { if(e.target.id === 'download-modal-backdrop') hideDlModal(); };
         document.getElementById('modal-close-button')?.addEventListener('click', hideDlModal);
 
-        const masterData = await fetchMasterData('https://gist.githubusercontent.com/Fillabrona/5a17fe172177f74a4a65196ba1b53c50/raw/58ba30c7fbce1406edaf9201bd7ca99dbc8a5170/downloadinfo');
+        const masterData = await fetchMasterData('https://gist.githubusercontent.com/Fillabrona/5a17fe172177f74a4a65196ba1b53c50/raw/bb7224e4e7d0400f4865c5993bbf0e6745bcb3d2/downloadinfo');
         
         if (masterData) {
             const verMatch = masterData.versionInfo.match(/Game:.*(v[\d.]+)/);
